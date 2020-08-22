@@ -6,4 +6,11 @@
     android:layout_height="match_parent"
     tools:context=".FamilyActivity">
 
+    <ListView
+        android:id="@+id/familyListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/category_family" />
+
+
 </android.support.constraint.ConstraintLayout>

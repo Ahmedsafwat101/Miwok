@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:minHeight="@dimen/list_item_height"
+    android:background="@color/tan_background">
+
+    <ImageView
+        android:layout_width="@dimen/list_item_height"
+        android:layout_height="@dimen/list_item_height"
+        android:id="@+id/idImage">
+    </ImageView>
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:layout_weight="3"
+        >
+
+        <TextView
+            android:id="@+id/englishWord"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:textColor="@android:color/white"
+            android:text="One" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:paddingRight="8dp"
+            android:layout_gravity="right"
+            android:layout_weight="1"
+            android:src="@android:drawable/ic_btn_speak_now" />
+
+        <TextView
+            android:id="@+id/miwokWord"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:textColor="@android:color/white"
+            android:layout_gravity="center_vertical"
+            android:text="One"
+            android:textStyle="bold"
+            android:textSize="16dp" />
+    </LinearLayout>
+</LinearLayout>

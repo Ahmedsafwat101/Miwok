@@ -16,6 +16,7 @@
 package com.example.android.miwok;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -34,6 +35,10 @@ public class MainActivity extends AppCompatActivity {
         TextView familyaActivity= (TextView) findViewById(R.id.family);
         TextView colorsActivity= (TextView) findViewById(R.id.colors);
         TextView phrasesActivity= (TextView) findViewById(R.id.phrases);
+
+
+
+
         //        Add onclickListener for each view
 
         numbersActivity.setOnClickListener(new View.OnClickListener() {
@@ -67,6 +72,8 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(phrasesIntent);
             }
         });
+
+
 
     }
 
