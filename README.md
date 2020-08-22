@@ -14,5 +14,11 @@
 * Java: Loops - Used for and while loops to build logic into an app. Wrote nested loops and used arrays to store and retrieve information.
 * Quick guide to Gradle - Learned how to work with Gradle.
 * Images and visual polish - Polished images and visuals to improve the user interface of the app.
+* Working with MediaPlayer for each list view 
+* Customize Adapter 
+* Release Resources approach 
+
+
+
 
 
