@@ -4,6 +4,6 @@
  
  <img src='https://github.com/Ahmedsafwat101/Miwok/blob/master/app.jpg' title='Video Walkthrough' width='' alt='Video Walkthrough' />
  
-  <img src='https://github.com/Ahmedsafwat101/Miwok/blob/master/app.jpg' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+  <img src='https://github.com/Ahmedsafwat101/Miwok/blob/master/Miwok.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 
