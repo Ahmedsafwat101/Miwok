@@ -1,2 +1,2 @@
 # Miwok
- Android App Udacity nanodegree 
+ Android App Udacity nanodegree Application 
