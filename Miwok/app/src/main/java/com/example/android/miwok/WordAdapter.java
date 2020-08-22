@@ -25,6 +25,7 @@ public class WordAdapter extends ArrayAdapter<Word> {
      * @param audioResourceId***/
      private int colorResourceId;
     private Context context;
+    private MediaPlayer mediaPlayer;
     public WordAdapter(Context context, List<Word> list, int colorResourceId) {
         super(context, 0,list);
         this.context=context;
@@ -48,14 +49,19 @@ public class WordAdapter extends ArrayAdapter<Word> {
         container.setBackgroundColor(color);
         // Get the {@link AndroidFlavor} object located at this position in the list
         final Word currentWord = getItem(position);
+        //Release MediaPlayer resources
+        if(mediaPlayer!=null){
+            mediaPlayer.release();
+        }
         //Set onClickListener to play audio
         container.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                MediaPlayer mediaPlayer= MediaPlayer.create(context,currentWord.getAudioID());
+                mediaPlayer= MediaPlayer.create(context,currentWord.getAudioID());
                 mediaPlayer.start();
             }
         });
+
         // Find the TextView in the list_item.xml layout with the ID version_name
         TextView nameTextView = (TextView) listItemView.findViewById(R.id.englishWord);
         // Get the version name from the current AndroidFlavor object and
